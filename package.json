@@ -1,0 +1,14 @@
+{
+  "name": "helena-morelin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "lint": "node --check app.js && node --check catalog.js && node --check config.js && node --check scripts/build.js",
+    "test": "node tests/site.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

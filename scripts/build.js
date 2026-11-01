@@ -1,0 +1,12 @@
+import { mkdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
+import { IMG, L1, L2 } from '../catalog.js';
+import { whatsapp } from '../config.js';
+const escape = value => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+const row = service => `<article class="row"><div class="media m${service.i.length}">${service.i.map(key => {const image = IMG[key]; return `<img src="${image.src}" width="${image.width}" height="${image.height}" alt="${service.n}: resultado em cliente" loading="lazy" decoding="async">`;}).join('')}</div><div class="info"><h3>${service.n}</h3>${service.d ? `<p class="note">${service.d}</p>` : ''}<dl>${service.p.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl><a class="btn" href="${escape(whatsapp('Olá, Helena! Quero agendar: ' + service.n))}" target="_blank" rel="noopener noreferrer" aria-label="Agendar ${service.n} pelo WhatsApp">Agendar pelo WhatsApp</a></div></article>`;
+let page = await readFile('index.html', 'utf8');
+for (const [id, services] of [['l1', L1], ['l2', L2]]) page = page.replace(new RegExp(`<div id="${id}">[\\s\\S]*?</div><!-- catalog-end -->|<div id="${id}"></div>`), `<div id="${id}">${services.map(row).join('')}</div><!-- catalog-end -->`);
+await writeFile('index.html', page);
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist');
+for (const file of ['index.html', 'styles.css', 'app.js', 'catalog.js', 'config.js', 'favicon.svg', 'robots.txt', 'assets']) await cp(file, 'dist/' + file, { recursive: true });
+console.log('Static site built in dist/');
