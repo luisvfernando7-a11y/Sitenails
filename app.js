@@ -22,7 +22,7 @@ document.addEventListener('click', event => { if (!event.target.closest('header'
 nav.addEventListener('focusout', () => {
   requestAnimationFrame(() => { if (!nav.contains(document.activeElement) && document.activeElement !== toggle) setMenu(false); });
 });
-matchMedia('(min-width:761px)').addEventListener('change', () => setMenu(false));
+matchMedia('(min-width:900px)').addEventListener('change', () => setMenu(false));
 const form = document.querySelector('#contact-form');
 const procedure = form.elements.procedure;
 services.forEach(service => procedure.add(new Option(service.n, service.n)));
