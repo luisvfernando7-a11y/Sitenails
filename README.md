@@ -25,9 +25,9 @@ Canonical, og:url e sitemap devem ser adicionados quando o domínio definitivo f
 
 ## Acabamento final
 
-Paleta definitiva: off-white `#FAF7F5`, rosa suave `#F2DCE5`, rosa antigo `#A45D80`, grafite `#382B34` e branco `#FFFFFF`. Header, hero, apresentação, agendamento e contato usam fundos claros; procedimentos usam rosa suave e cards brancos; o rodapé usa grafite. Fotografias preservadas. Os estilos foram consolidados para eliminar regras conflitantes de temas anteriores. Textos revisados, preços e regras preservados.
+Paleta final: rosa médio `#B77D99`, rosa antigo escuro `#925A78`, rosa suave `#EBCDDC`, off-white `#FAF6F3`, grafite `#352A32` e branco `#FFFFFF`. O hero usa rosa médio e título claro; o texto pequeno do hero fica sobre off-white para preservar o contraste. Sobre e avisos usam off-white; procedimentos têm fundo rosa suave e cards off-white; agendamento e rodapé usam rosa antigo escuro. Contato e formulário permanecem claros. Fotografias, valores e regras foram preservados.
 
-Contraste medido: branco sobre rosa antigo **4,71:1**, grafite sobre off-white **12,59:1** e grafite sobre rosa suave **10,33:1**. Rosa antigo não é usado em textos pequenos sobre off-white (4,42:1).
+Contraste medido: branco sobre rosa antigo escuro **5,31:1**, grafite sobre off-white **12,78:1**, grafite sobre rosa suave **9,35:1**. O título grande do hero tem contraste **3,28:1**, atendendo AA para texto grande. Texto pequeno não é colocado diretamente sobre rosa médio. Estilos consolidados, sem gradientes decorativos nem animações de entrada.
 
 Projeto Vercel existente: **helena-morelin**, endereço de produção **https://helena-morelin.vercel.app**. Publicação inicial confirmada como READY; refinamentos devem atualizar esse mesmo projeto.
 
