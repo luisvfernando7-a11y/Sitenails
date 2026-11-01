@@ -25,11 +25,11 @@ Canonical, og:url e sitemap devem ser adicionados quando o domínio definitivo f
 
 ## Acabamento final
 
-Identidade final: lilás escuro `#51365F`, lavanda `#80638E`, rosa suave `#E8C9D9`, off-white `#FAF7F5`, grafite `#302936` e branco `#FFFFFF`. Header mantém geometria e comportamento recuperados de `fe5df86`. Hero, agendamento e rodapé trazem o lilás; leitura e catálogo usam superfícies claras. O rosa complementa os avisos e as bordas, sem dominar toda a página.
+Restauração visual baseada no primeiro commit do repositório, `30a3c3f`. O CSS do hero com foto de fundo, do header e do catálogo em linhas alternadas foi recuperado dessa versão. Sem painéis sobre a foto, sem mosaico no hero e sem os cards de catálogo adicionados posteriormente. A fotografia e seu enquadramento original (`object-position: 40% 22%`) foram preservados.
 
-Catálogo com 11 procedimentos em duas categorias reais, links entre categorias, fotografias preservadas, cards brancos e blocos de preços em off-white. Serifada com peso 500 para títulos, sem itálico excessivo; Inter para leitura, preços e controles. Somente duas famílias de fontes.
+Paleta solicitada: roxo principal `#432B53`, roxo secundário `#62456E`, off-white `#FAF7F3`, rosa de detalhe `#D9B2C8`, grafite `#302536` e branco `#FFFFFF`. O roxo predomina; avisos usam off-white com texto grafite. Sobreposições neutras discretas no hero mantêm a fotografia visível e dão suporte ao texto claro.
 
-Contraste: branco sobre lilás **10,28:1**, branco sobre lavanda **5,13:1**, grafite sobre off-white **13,16:1** e grafite sobre rosa suave **9,22:1**. Inventário dos dados e checksums das fotos em `docs/commercial-inventory.md`.
+Preservados os dados e textos comerciais atuais, preços autorizados, formulário, normalização de telefone, navegação acessível, WhatsApp contextual, política de privacidade, imagens WebP locais com dimensões e testes posteriores. A aplicação de Lash lifting e Brow lamination permanece em R$ 90,00. Inventário comercial: `docs/commercial-inventory.md`.
 
 Projeto Vercel existente: **helena-morelin**, endereço de produção **https://helena-morelin.vercel.app**. Publicação inicial confirmada como READY; refinamentos devem atualizar esse mesmo projeto.
 
