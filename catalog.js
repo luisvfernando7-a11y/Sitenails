@@ -2,13 +2,13 @@ export const IMG={"p2a": {"src": "assets/p2a.webp", "width": 580, "height": 704}
 const R=v=>"R$ "+v+",00";
 export const L1=[
 {n:"Volume brasileiro",i:["p3"],p:[["Aplicação",R(85)],["Manutenção",R(65)]]},
-{n:"Volume egípcio 4D / 5D",i:["p4a","p4b"],p:[["Aplicação",R(95)],["Manutenção",R(70)]]},
+{n:"Volume egípcio 4D/5D",i:["p4a","p4b"],p:[["Aplicação",R(95)],["Manutenção",R(70)]]},
 {n:"Efeito anime",i:["p5"],p:[["Aplicação",R(100)],["Manutenção",R(75)]]},
 {n:"Volume Aurora",i:["p6"],p:[["Aplicação",R(90)],["Manutenção",R(75)]]},
 {n:"Efeito fox eyes",i:["p7a","p7b","p7c"],p:[["Aplicação",R(95)],["Manutenção",R(70)]]},
 {n:"Efeito fox eyes marrom",i:["p8a","p8b"],p:[["Aplicação",R(95)],["Manutenção",R(75)]]},
 {n:"Volume capping",i:["p10a"],p:[["Aplicação",R(120)],["Manutenção",R(80)]]},
-{n:"Volume express",i:["p10b"],d:"Apenas 50% dos seus fios preenchidos, incluso os modelos fox eyes, volume brasileiro e volume egípcio. Este procedimento não tem opção de manutenção, apenas nova aplicação.",p:[["Aplicação",R(65)]]}
+{n:"Volume express",i:["p10b"],d:"Preenchimento de apenas 50% dos fios, nas técnicas fox eyes, volume brasileiro e volume egípcio. Este procedimento não inclui manutenção: é necessário realizar uma nova aplicação.",p:[["Aplicação",R(65)]]}
 ];
 export const L2=[
 {n:"Design de sobrancelhas",i:["p9a"],p:[["Simples",R(25)],["Com henna",R(30)]]},
