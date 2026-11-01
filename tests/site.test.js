@@ -7,7 +7,7 @@ const page = await readFile('dist/index.html', 'utf8');
 test('preserves all eleven procedures and original application/maintenance prices', () => {
   assert.equal(L1.length + L2.length, 11);
   assert.deepEqual(L1.map(s => s.p.map(p => p[1])), [['R$ 85,00','R$ 65,00'],['R$ 95,00','R$ 70,00'],['R$ 100,00','R$ 75,00'],['R$ 90,00','R$ 75,00'],['R$ 95,00','R$ 70,00'],['R$ 95,00','R$ 75,00'],['R$ 120,00','R$ 80,00'],['R$ 65,00']]);
-  assert.deepEqual(L2.map(s => s.p.map(p => p[1])), [['R$ 25,00','R$ 30,00'],['R$ 70,00','após 30 dias'],['R$ 70,00','após 30 dias']]);
+  assert.deepEqual(L2.map(s => s.p.map(p => p[1])), [['R$ 25,00','R$ 30,00'],['R$ 90,00','após 30 dias'],['R$ 90,00','após 30 dias']]);
   for (const service of [...L1, ...L2]) { assert.ok(page.includes(`<h3>${service.n}</h3>`)); assert.ok(page.includes(encodeURIComponent('Olá, Helena! Quero agendar: ' + service.n))); }
 });
 test('all local assets exist; images have dimensions; internal targets resolve', async () => {

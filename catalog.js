@@ -12,6 +12,6 @@ export const L1=[
 ];
 export const L2=[
 {n:"Design de sobrancelhas",i:["p9a"],p:[["Simples",R(25)],["Com henna",R(30)]]},
-{n:"Lash lifting",i:["p9b"],p:[["Aplicação",R(70)],["Manutenção","após 30 dias"]]},
-{n:"Brow lamination",i:["p9c"],p:[["Aplicação",R(70)],["Manutenção","após 30 dias"]]}
+{n:"Lash lifting",i:["p9b"],p:[["Aplicação",R(90)],["Manutenção","após 30 dias"]]},
+{n:"Brow lamination",i:["p9c"],p:[["Aplicação",R(90)],["Manutenção","após 30 dias"]]}
 ];
